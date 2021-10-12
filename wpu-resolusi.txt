@@ -1,1 +1,2 @@
 WPU RESOLUSI
+- Membuat web responsive
