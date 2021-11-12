@@ -1,57 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <title>Footer Design</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="C:\Users\HP\Documents\footer HTML&CSS\footer1.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
+
 <body>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>ProNews</h4>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Kategori Berita</h4>
-                    <ul>
-                        <li><a href="#">Sepakbola</a></li>
-                        <li><a href="#">Ekonomi</a></li>
-                        <li><a href="#">Saham</a></li>
-                        <li><a href="#">Infografis</a></li>
-                        <li><a href="#">Startup</a></li>
-                        <li><a href="#">Internasional</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Informasi</h4>
-                    <ul>
-                        <li><a href="#">Redaksi</a></li>
-                        <li><a href="#">Media Partner</a></li>
-                        <li><a href="#">Info iklan</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><span class="fab fa-facebook-f"></span></a>
-                        <a href="#"><span class="fab fa-twitter"></span></a>
-                        <a href="#"><span class="fab fa-instagram"></span></a>
-                        <a href="#"><span class="fab fa-linkedin-in"></span></a>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div class="calculator">
+        <form name="form">
+            <input class="layout" name="layout" placeholder="0">
+        </form>
+        <table>
+            <tr>
+                <td><input class="tombol" type="button" value="RES" onclick="reset()"></td>
+                <td><input class="tombol" type="button" value="DEL" onclick="hapus()"></td>
+                <td><input class="tombol" type="button" value="/" onclick="masukan('/')"></td>
+                <td><input class="tombol" type="button" value="x" onclick="masukan('*')"></td>
+            </tr>
+            <tr>
+                <td><input class="tombol" type="button" value="7" onclick="masukan(7)"></td>
+                <td><input class="tombol" type="button" value="8" onclick="masukan(8)"></td>
+                <td><input class="tombol" type="button" value="9" onclick="masukan(9)"></td>
+                <td><input class="tombol" type="button" value="-" onclick="masukan('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="tombol" type="button" value="4" onclick="masukan(4)"></td>
+                <td><input class="tombol" type="button" value="5" onclick="masukan(5)"></td>
+                <td><input class="tombol" type="button" value="6" onclick="masukan(6)"></td>
+                <td><input class="tombol" type="button" value="+" onclick="masukan('+')"></td>
+            </tr>
+            <tr>
+                <td><input class="tombol" type="button" value="1" onclick="masukan(1)"></td>
+                <td><input class="tombol" type="button" value="2" onclick="masukan(2)"></td>
+                <td><input class="tombol" type="button" value="3" onclick="masukan(3)"></td>
+                <td rowspan="5"><input style="height: 105px;" type="button" class="tombol" value="=" onclick="hasil()"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" class="tombol" style="width:111px" value="0" onclick="masukan(0)"></td>
+                <td><input class="tombol" type="button" value="." onclick="masukan('.')"></td>
+            </tr>
+        </table>
+    </div>
 </body>
+
 </html>
-
-

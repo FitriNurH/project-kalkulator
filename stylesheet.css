@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ed61ed;
+}
+
+.tombol {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 3px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: #000000
+}
+
+.layout {
+    width: 210px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background: #eeefff;
+    opacity: 0.7;
+    transform: translateX(-50%) translateY(-50%);
+}
